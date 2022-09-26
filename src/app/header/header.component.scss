@@ -1,0 +1,303 @@
+.navbar {
+    background: #eaf2ff;
+    width: 100%;
+    height: 4rem;
+}
+
+.headerLinks {
+    display: flex;
+    cursor: pointer;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #454A6D;
+    padding-left: 20px;
+}
+
+.headerprofile {
+    width: 45px;
+    height: 45px;
+    margin-left: 2rem;
+    background: #005DF2;
+    border-radius: 50%;
+    background-image: url("../../assets/images/Ellipse 271.png");
+    background-size: cover;
+}
+
+.input {
+    width: 287px;
+    height: 20px;
+    border-radius: 9px;
+    padding: 20px;
+    background-color: transparent;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #454A6D;
+}
+
+
+
+.navlinks {
+    display: flex;
+}
+
+.navlinks li {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.navlinks li .navContent {
+    color: #454A6D;
+    text-decoration: none;
+    padding: 15px 15px 24px 15px;
+    transition: all 0.3s ease;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.navlinks li a:hover {
+    background-color: white;
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.megaContent {
+    position: absolute;
+    top: 62px;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 35rem;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.navlinks li:hover .megaContent {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+.megaContent .content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+}
+
+.megaContent .content .heading {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 22px;
+    color: #454A6D;
+    margin-top: 0.6rem;
+}
+
+.row {
+    width: 25%;
+}
+
+.content .row a {
+    text-decoration: none;
+    padding-top: 0.5rem;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #868686;
+}
+
+.inputdiv {
+    display: flex;
+    padding-left: 15rem;
+}
+
+.searchIcon {
+
+    display: none;
+}
+
+.sidebar {
+    width: 100% !important;
+    height: 100vh;
+    background: #eaf2ff;
+    Box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20), 0 6px 6px rgba(0, 0, 0, 0.23);
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+
+.responsivediv {
+    display: none;
+}
+
+.menuIcon {
+    display: none;
+}
+
+.sideBarList {
+    display: block;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sideBarItemTitle {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideBarSubItemTitle {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: #454A6D;
+}
+
+.angleIcon {
+    font-size: 30px;
+}
+
+.sideBarContent {
+    font-size: 22px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sideBarContent a {
+    list-style: none;
+    text-decoration: none;
+    padding: 4px 0 0 30px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #868686;
+
+
+}
+
+.variable {
+    transform: rotate(90deg);
+}
+
+.divider {
+    background: #C7C7C7;
+    opacity: 0.6;
+    margin: 0.6rem;
+    height: 2px;
+    width: 95%;
+}
+
+.headerdiv {
+    width: 50px;
+    height: 50px;
+    // margin-left: 2rem;
+    background: #005DF2;
+    border-radius: 50%;
+    background-image: url("../../assets/images/Ellipse 271.png");
+    background-size: cover;
+}
+
+.profileName {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    color: #2F2F2F;
+    padding: 12px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: 5rem;
+        width: 100% !important;
+    }
+
+    .headerImg {
+        display: none;
+    }
+
+    .headerSection {
+        width: 50%;
+        height: 4rem;
+    }
+
+
+    .navlinks li a {
+        display: none;
+        padding: 0;
+    }
+
+    .headerprofile {
+        display: none;
+        transform: translate(0%, 20%);
+    }
+
+    .headerLinks {
+        display: none;
+    }
+
+    .inputdiv {
+        display: none;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        left: -100%;
+        transition: all 0.4s ease;
+    }
+
+    .menuClass {
+        width: 100%;
+        left: 0px !important;
+        transition: all 0.4s ease;
+    }
+
+    .responsivediv {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .searchIcon {
+        display: flex;
+        margin-top: 0.8rem;
+        color: black;
+        padding-right: 2rem;
+    }
+
+    .menuIcon {
+        display: flex;
+        color: black;
+        padding-left: 2rem;
+        font-size: 25px;
+    }
+
+}

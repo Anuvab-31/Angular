@@ -1,0 +1,133 @@
+.newsSection {
+    height: 90vh;
+    width: 100%;
+}
+
+.newsHeading {
+    height: 33px;
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 110%;
+    color: #1F1F1F;
+    text-align: center !important;
+    padding-top: 3rem;
+}
+
+.cardContents {
+    margin-top: 5rem;
+}
+
+.BoxCard {
+    height: 350px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 56.1014px 55.2383px 4.31549px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+
+
+
+.carouselcardcontents {
+    height: 69.91px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    padding: 7px;
+}
+
+.cardsubContent {
+    height: 19px;
+    left: 444.26px;
+    top: 3010px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BEBEBE;
+    padding: 1rem 7px 7px 7px;
+}
+
+.buttonCard {
+    margin: 0.4rem 7px 7px 7px;
+}
+
+.latestButton {
+    width: 100%;
+}
+
+.cardbutton {
+    width: 100%;
+    background: #005DF2;
+    border-radius: 5px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 3rem;
+    // margin-left: 0.6rem;
+    padding: 7px;
+    color: #FFFFFF;
+
+}
+
+.readbutton {
+    width: 150px;
+    border-radius: 5px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 3rem;
+    padding: 7px;
+    color: #005DF2;
+}
+
+.cardbutton:hover {
+    background: #005DF2;
+    opacity: 0.9;
+    color: #FFFFFF;
+}
+
+.newsButtonBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.works {
+    // width: 150px;
+    height: 40px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+    color: #005DF2;
+    white-space: nowrap;
+    // margin-left: 2rem;
+}
+
+@media (max-width: 600px) {
+    .newsSection {
+        height: 180vh;
+    }
+
+    .BoxCard {
+        width: 80%;
+    }
+
+    .BoxCard {
+        display: block;
+        justify-content: center !important;
+        align-items: center;
+        transform: translate(10%, 0);
+    }
+}

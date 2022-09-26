@@ -1,0 +1,200 @@
+<!-- <p>header works!</p> -->
+<div class="sidebar" [class.menuClass]="menuVariable">
+
+    <div class="p-4 d-flex justify-content-between mt-3">
+        <div class="d-flex">
+            <div class="headerdiv"></div>
+            <div class="profileName">Kianna Vetrovs</div>
+        </div>
+        <div class="fs-2">
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="d-block">
+        <div class="p-4 d-flex justify-content-between">
+            <span class="sideBarItemTitle">Training</span>
+            <div class="angleIcon" (click)="openDropDown()" [class.variable]="dropdownVariable"><i
+                    class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+        <div class="sideBarContent" *ngIf="dropdownVariable">
+
+            <div class="d-block">
+                <div class="p-4 d-flex justify-content-between">
+                    <span class="sideBarSubItemTitle">Governance</span>
+                    <div class="angleIcon" (click)="openDropDown5()" [class.variable]="dropdownVariable"><i
+                            class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="sideBarContent" *ngIf="dropDownVariable5">
+                    <a href="/">COBIT</a>
+                    <a href='/'>ISO/IEC 38500</a>
+                    <a href='/'>CGEIT</a>
+                    <div class="p-4 d-flex justify-content-between">
+                        <span class="sideBarSubItemTitle">Performance Management</span>
+                        <div class="angleIcon" (click)="openDropDown5()" [class.variable]="dropdownVariable"><i
+                                class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="p-4 d-flex justify-content-between">
+                        <span class="sideBarSubItemTitle">Cybersecurity & Privacy</span>
+                        <div class="angleIcon" (click)="openDropDown5()" [class.variable]="dropdownVariable"><i
+                                class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="d-block">
+        <div class="p-4 d-flex justify-content-between">
+            <span class="sideBarItemTitle">Consulting</span>
+            <div class="angleIcon" (click)="openDropDown1()" [class.variable]="dropdownVariable"><i
+                    class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+        <div class="sideBarContent" *ngIf="dropDownVariable1">
+            <a href="/">COBIT</a>
+            <a href='/'>ISO/IEC 38500</a>
+            <a href='/'>CGEIT</a>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="d-block">
+        <div class="p-4 d-flex justify-content-between">
+            <span class="sideBarItemTitle">Solutions</span>
+            <div class="angleIcon" (click)="openDropDown2()" [class.variable]="dropdownVariable"><i
+                    class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+        <div class="sideBarContent" *ngIf="dropDownVariable2">1111</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="d-block">
+        <div class="p-4 d-flex justify-content-between">
+            <span class="sideBarItemTitle">Webstore</span>
+            <div class="angleIcon" (click)="openDropDown3()" [class.variable]="dropdownVariable"><i
+                    class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+        <div class="sideBarContent" *ngIf="dropDownVariable3">1111</div>
+    </div>
+
+    <div class="divider"></div>
+
+
+    <div class="d-block">
+        <div class="p-4 d-flex justify-content-between">
+            <span class="sideBarItemTitle">About us</span>
+            <div class="angleIcon" (click)="openDropDown4()" [class.variable]="dropdownVariable"><i
+                    class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+        <div class="sideBarContent" *ngIf="dropDownVariable4">1111</div>
+    </div>
+</div>
+
+
+<nav class="navbar">
+    <div class="responsivediv">
+        <div class="mt-3 menuIcon" (click)="openMenu()"> <i class="fa-solid fa-bars "></i></div>
+        <div class="mt-2"><a class="navbar-brand">
+                <img src="../../assets/images/Group 545.png" height="50" />
+            </a></div>
+        <div class="fs-2"><i class="fa-solid fa-magnifying-glass searchIcon"></i></div>
+    </div>
+    <div class="d-flex">
+        <div class="inputdiv">
+            <a class="navbar-brand">
+                <img src="../../assets/images/Group 545.png" height="40" />
+            </a>
+            <input type="email" class="form-control input" placeholder="Search">
+        </div>
+        <form class="d-flex">
+            <ul class="navlinks d-flex">
+                <li>
+                    <a href='/' class="navContent">Training</a>
+                    <div class="megaContent">
+                        <div class="content">
+                            <div class="row">
+                                <div class="heading">Governance</div>
+                                <a href="/">COBIT</a>
+                                <a href='/'>ISO/IEC 38500</a>
+                                <a href='/'>CGEIT</a>
+                                <div class="heading">Performance Management</div>
+                                <a href='/'>Balanced Scorecard</a>
+                                <a href='/'>KPI</a>
+                                <a href='/'>Strategy Management</a>
+                                <div class="heading">Cybersecurity & Privacy</div>
+                                <a href='/'>EXIN Information Security based ...</a>
+                                <a href='/'>ISO/IEC 27001</a>
+                                <a href='/'>Cyber & IT Security</a>
+                                <a href='/'>Computer Forensics</a>
+                                <a href='/'>Cybersecurity</a>
+                                <a href='/'>ISO/IEC 27001</a>
+                                <a href='/'>GDPR - Data Protection</a>
+                            </div>
+                            <div class="row">
+                                <div class="heading">Continuity & Resilience </div>
+                                <a href='/'>BCM ISO 22301</a>
+                                <a href='/'>Disaster Recovery</a>
+                                <a href='/'>Organization Resilience - ISO 22316</a>
+                                <div class="heading">Risk Management</div>
+                                <a href='/'>CRISC</a>
+                                <a href='/'>ISO 31000</a>
+                                <a href='/'>IT Risk Management</a>
+                                <a href='/'>ISO 27005</a>
+                                <a href='/'>M_o_R</a>
+                                <div class="heading">Compliance Management</div>
+                                <a href='/'>ISO 19600 CMS</a>
+                                <a href='/'>ISO 37001 ABMS</a>
+                                <div class="heading">Quality & Lean Management</div>
+                                <div class="heading">Project Management </div>
+                                <div class="heading">Service Management </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="heading">Auditing & Assurance </div>
+                                <a href='/'>Cybersecurity Audit</a>
+                                <a href='/'>CISA</a>
+                                <a href='/'>Internal Auditor</a>
+                                <a href='/'>Assessor</a>
+                                <div class="heading">Digital Transformation</div>
+                                <a href='/'>Digital Transformation Officer</a>
+                                <a href='/'>Digital Transformation Professional</a>
+                                <a href='/'>Digital Transformation Specialist</a>
+                                <a href='/'>DG Technology Professional</a>
+                                <a href='/'>DG Data Science Professional</a>
+                                <a href='/'>Digital Transformation Data Scientist</a>
+                                <a href='/'>Digital Transformation Security Professional</a>
+                                <a href='/'>DG Technology Professional</a>
+                                <div class="heading">Architecture Management</div>
+                                <div class="heading">Others</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href='/' class="navContent">Consulting</a></li>
+                <li><a href='/' class="navContent">Solutions</a></li>
+                <li><a href='/' class="navContent">Webstore</a></li>
+                <li><a href='/' class="navContent">About us</a></li>
+            </ul>
+            <div class="headerLinks mt-3">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="headerprofile">
+            </div>
+        </form>
+    </div>
+</nav>

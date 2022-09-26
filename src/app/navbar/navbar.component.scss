@@ -1,0 +1,63 @@
+.nav {
+    // width: 100vw;
+    height: 2rem;
+    background: #ECF3FF;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 2rem 8px 2rem;
+}
+
+.navContent {
+    padding-left: 5rem;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail {
+    display: flex;
+    gap: 1rem;
+}
+
+.heading {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #454A6D;
+}
+
+.call {
+    padding-left: 3rem;
+    gap: 1rem;
+    display: flex;
+
+}
+
+
+.icon {
+    padding-right: 1.4rem;
+}
+
+.icon a {
+    text-decoration: none;
+    padding-left: 4px;
+    width: 19px;
+    height: 19px;
+    left: 1123px;
+    top: 15px;
+    color: #454A6D;
+    font-size: 15px !important;
+}
+
+.contact {
+    display: flex;
+    margin-left: 1rem;
+}
+
+@media (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+}
